@@ -6,6 +6,7 @@
     <title>Harvard-interface</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
+       <script src="script.js" defer></script>
 
 </head> 
 <body>
@@ -17,7 +18,14 @@
     </div>
 
     <div id="options">
-        <button href="href">
+        <button onclick="sayHello()" id="bouton">
+           <script>
+            let myButton = document.getElementById("bouton")
+            function sayHello() {
+                myButton.textContent= "Andy le goat"
+                alert("Hello")
+            }
+           </script> 
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-panel-left preview-icon"><rect width="7" height="18" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/></svg> Dashboard
 
        </button>
@@ -103,7 +111,7 @@
             <img src="img/Neil.png">
         </div>
             <div class="andy_red deuxcol">
-                <div id="boîte">
+                <div class="boîte">
                     <p class="id"> ID: 1357908642</p>
                     <h2 class="name">Mathias Fontagne</h2>
                     <p> CS<p></p>
@@ -111,7 +119,7 @@
             <img src="img/Mathias.png">
         </div>
               <div class="andy_red deuxcol">
-                <div id="boîte">
+                <div class="boîte">
                     <p class="id"> ID: 0123457689</p>
                     <h2 class="name">Sasori Sable Rouge</h2>
                     <p> IT<p></p>
@@ -119,7 +127,7 @@
             <img src="img/Sasori.png">
         </div>
          <div class="andy_red deuxcol">
-                <div id="boîte">
+                <div class="boîte">
                     <p class="id"> ID: 0123457689</p>
                     <h2 class="name">Gaara od the Desert</h2>
                     <p> Onboarder<p></p>
@@ -127,7 +135,7 @@
             <img src="img/Gaara.png">
         </div>
          <div class="andy_red deuxcol">
-                <div id="boîte">
+                <div class="boîte">
                     <p class="id"> ID: 0123457689</p>
                     <h2 class="name">Sasori Sable Rouge</h2>
                     <p> Marketing<p></p>
@@ -135,7 +143,7 @@
             <img src="img/Kaguya.png">
         </div>
          <div class="andy_red deuxcol">
-                <div id="boîte">
+                <div class="boîte">
                     <p class="id"> ID: 0123457689</p>
                     <h2 class="name">Sasori Sable Rouge</h2>
                     <p> Human Ressources<p></p>
@@ -146,13 +154,18 @@
     </section>
         <section id="filter">
             <h2 id="h2_department">Other Department</h2>
-
+       
             <p><a href="#home">Department of Computer Science</a></p>
              <p><a href="#home"> Department of Computer Science</a></p>
              <p><a href="#home">Department of Visual And Environmental Studies</a></p>
              <p><a href="#home">Department of Molecular and Cellular Biology </a></p>
              <p><a href="#home">School Of Engineering And Applied of Sciences</a></p>
              <p><a href="#home">Department of Comparative  Literature</a></p>
+             <p><a href="#home">Department of Molecular And  Cellular Biology</a></p>
+             <p><a href="#home">Harvard T.H Chan School Of Public Health</a></p>
+             <p><a href="#home">Harvard Graduate School Of  Education </a></p>
+             <p><a href="#home">Department Of Molecular And Cellular Biology </a></p>
+
         </section>
         </div>
         
